@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+  gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(170, 170, 170, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 15px;
+}
+</style>
+</head>
+<body>
+
+<h1>Grid Layout</h1>
+
+<div class="grid-container">
+    <div class="item1">WEB DEVELOPMENT 2</div>
+
+<div class="grid-item item2">Menu<br>
+         <a href="Home.html">Home</a><br>
+         <a href="About.html">About</a><br>
+         <a href="Contact.html">Contact</a><br>
+         <a href="login.html">login</a><br>
+
+
+
+    </div>
+
+    <div class="grid-item item3">Main<br>
+    |<video width="650" height="400" controls>
+  <source src="asta vid.mp4" type="video/mp4">
+
+    </div>
+
+ 
+  <div class="item4"> Right
+  <h2>black clover</h2>
+  <p><strong>News Title 1</strong></p>
+  <p>Black Clover's captivating story takes place across the Four Kingdoms that occupy their shared region. The story focuses on the Clover Kingdom as the birthplace of protagonist Asta and the epicenter of several significant historical events in the fictional world. In addition to Asta's home, the Diamond Kingdom, Heart Kingdom, and Spade Kingdom also play important roles in the plot of the series.</p>
+  <p><strong>News Title 2</strong></p>
+  <p>The Four Kingdoms are truly diverse nations with distinct cultures that influence their relationships with the other kingdoms in the region. Significant figures emerge from all four realms throughout the narrative to influence Asta's journey, making it important to understand the nature of each kingdom to appreciate characters and the encounters between them at their fullest level. As the political tensions between the Four Kingdoms continue to grow, the dynamics motivating the actions of each nation are as significant as ever.</p>
+</div>
+
+  <div class="item5">
+  <p>&copy; 2024 Webdev2. All rights reserved.</p>
+  </div>
+</div>
+
+</body>
+</html>
